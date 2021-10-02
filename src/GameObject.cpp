@@ -10,8 +10,8 @@ GameObject::GameObject(const char* texturesheet, int x, int y){
     ypos = y;
 }
 
-//Movement and stuff
-void GameObject::Update(int xc, int yc)
+
+void GameObject::Update(int xc, int yc)             // Movement and stuff
 {
     xpos ++;
     ypos ++;

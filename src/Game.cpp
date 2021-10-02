@@ -67,10 +67,8 @@ void Game::handleEvents()
     SDL_PollEvent(&event);
 
     switch (event.type) {
-        // for the 'X' button on titlebar to work. SD_QUIT = SIGTERM
-        case SDL_QUIT:
-            // to get out of while loop in main.cpp
-            isRunning = false;
+        case SDL_QUIT:              // for the 'X' button on titlebar to work. SD_QUIT = SIGTERM
+            isRunning = false;      // to get out of while loop in main.cpp
             break;
 
         default:
@@ -78,8 +76,7 @@ void Game::handleEvents()
     }
 }
 
-// update objects(entities). movements can go here.
-void Game::update()
+void Game::update()                 // update objects(entities). movements can go here.
 {
     player->Update(5, 5);
     enemy->Update(5, 5);

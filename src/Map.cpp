@@ -1,7 +1,10 @@
+// Place where levels/rooms/maps will get created
+
 #include "../include/Map.hpp"
 #include "../include/TextureManager.hpp"
 
-
+// map data. might move to a config file later
+// change the values to 0,1,2 to create map
 int lvl_1[20][25] = {
     { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 },
     { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 },
@@ -42,6 +45,8 @@ Map::Map()
 
 void Map::LoadMap(int arr[20][25])
 {
+    // assign arr(the map you wanna provide)'s data to 
+    // Map class' private map variable
     for ( int row = 0; row < 20; row++)
     {
         for ( int col = 0; col < 25; col++)
@@ -55,9 +60,9 @@ void Map::DrawMap()
 {
     int type = 0;
 
-    for ( int row = 0; row < 20; row++)
+    for ( int row = 0; row < 20; row++ )
     {
-        for ( int col = 0; col < 25; col++)
+        for ( int col = 0; col < 25; col++ )
         {
             type = map[row][col];
 

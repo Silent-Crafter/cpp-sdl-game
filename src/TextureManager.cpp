@@ -12,6 +12,7 @@ SDL_Texture* TextureManager::Loadtexture(const char *texture)
     return tex;
 }
 
+// i wonder why i created this. well simple name i guess
 void TextureManager::Draw(SDL_Texture* tex, SDL_Rect src, SDL_Rect dest)
 {
     SDL_RenderCopy(Game::renderer, tex, &src, &dest);

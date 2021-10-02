@@ -11,6 +11,11 @@
 class Component;
 class Entity;
 
+// what is this shit
+// i dont know
+// need to study
+// feel free to educate me if you are reading this and know about it
+// cpp noob here
 using ComponentID = std::size_t;
 
 inline ComponentID getComponentID()
